@@ -1,6 +1,6 @@
-import { CustomVideoElement } from 'custom-media-element';
-import { MediaTracksMixin } from 'media-tracks';
-import Hls from 'hls.js/dist/hls.mjs';
+import { CustomVideoElement } from '/npm/custom-media-element@1.2.3/+esm';
+import { MediaTracksMixin } from '/npm/media-tracks@0.3.0/+esm';
+import Hls from '/npm/hls.js@1.5.4/dist/hls.mjs/+esm';
 
 const HlsVideoMixin = (superclass) => {
 
