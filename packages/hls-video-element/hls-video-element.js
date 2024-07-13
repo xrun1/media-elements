@@ -42,7 +42,8 @@ const HlsVideoMixin = (superclass) => {
 
         this.api = new Hls({
           // Mimic the media element with an Infinity duration for live streams.
-          liveDurationInfinity: true
+          liveDurationInfinity: true,
+          capLevelToPlayerSize: this.hasAttribute("capleveltoplayersize")
         });
 
         // Wait 1 tick to allow other attributes to be set.
